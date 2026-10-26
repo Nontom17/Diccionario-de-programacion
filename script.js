@@ -6,5 +6,17 @@ function cambiarsesion(boton){
 
 function ocultar(boton) {
 
-    _________________ // completa aqui
+    // completa aqui
 }
+
+function megusta(titulo, idcontador) {
+
+    alert("Te gustó la definición: " + titulo);
+
+    let contador = document.getElementById(idcontador);
+    contador.innerText = Number(contador.innerText) + 1;
+
+}
+
+
+

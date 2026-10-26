@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diccionario de programación</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 
 <body>
@@ -15,14 +14,14 @@
         <button onclick="cambiarsesion(this)">Iniciar sesión</button>
     </header>
     <main>
-        <button onclick="ocultar(this)">Agregar definición</button>
+        <button onclick = 'ocultar(this)'>Agregar definición</button>
 
         <!--Definicion 1-->
         <section class="definición">
             <h2>Variable</h2>
             <p>Espacio con nombre donde un programa guarda un dato para usarlo despues</p>
             <p><span id="likes-variable">0</span></p>
-            <button onclick="">me gusta</button>
+            <button onclick="megusta('Variable', 'likes-variable')">me gusta</button>
         </section>
 
         <!--Definicion 2-->
@@ -30,7 +29,7 @@
             <h2>Funcion</h2>
             <p>Bloque de codifo con nombre que realiza una tarea y se puede usar muchas veces</p>
             <p><span id="likes-funcion">0</span></p>
-            <button onclick="">me gusta</button>
+            <button onclick="megusta('Función', 'likes-funcion')">me gusta</button>
         </section>
 
         <!--Definicion 3-->
@@ -38,10 +37,12 @@
             <h2>Evento</h2>
             <p>Algo que ocurre en la pagina, como un clic, y el porgrama puede detectar</p>
             <p><span id="likes-evento">0</span></p>
-            <button onclick="">me gusta</button>
+            <button onclick="megusta('Evento', 'likes-evento')">me gusta</button>
         </section>
     </main>
 
+
+    <script src="script.js"></script>
 </body>
 
 </html>
